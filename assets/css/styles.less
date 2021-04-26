@@ -891,10 +891,13 @@ body {
         .flex-box;
         flex-direction: column;
         align-items: center;
-
+        a{
+            text-decoration: none;
+            color: @text-heading-color;
         img{
             height: @height-banner;
             width: 100%;
+        }
         }
         .count-number{
             position: absolute;
@@ -936,6 +939,10 @@ body {
     bottom: 38px;
     display: inline-block;
     text-align: center;
+    a{
+        text-decoration: none;
+        color: @text-heading-color;
+    }
     .count-content__heading{
         font-size: 3rem;
         text-transform: uppercase;
@@ -978,7 +985,9 @@ body {
 }
 //
 .banner-top__content{
+   
     .content__percent{
+        text-decoration: none;
         font-size: 6rem;
         font-weight: 600;
         color: @primary-color;
@@ -1115,7 +1124,7 @@ body {
             outline: none;
             .text-two-line; 
             &:hover{
-                color: #d926e9;
+                color: @primary-color;
             }
         }
         .product-price{
@@ -1194,6 +1203,10 @@ body {
                 word-spacing: 3px;
                 // overflow: hidden;
                 // .text-two-line;
+                .transition;
+                &:hover {
+                    color: @primary-color;
+                }
             }
             .news-time{
                 font-size: @font-size;
